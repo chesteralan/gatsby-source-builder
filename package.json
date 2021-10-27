@@ -1,0 +1,30 @@
+{
+  "name": "gatsby-source-builder",
+  "version": "1.0.0",
+  "description": "Gatsby Source Builder.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chesteralan/gatsby-source-builder.git"
+  },
+  "keywords": [
+    "gatsbyjs",
+    "gatsby",
+    "builder.io"
+  ],
+  "author": "chesteralan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chesteralan/gatsby-source-builder/issues"
+  },
+  "homepage": "https://github.com/chesteralan/gatsby-source-builder#readme",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}
