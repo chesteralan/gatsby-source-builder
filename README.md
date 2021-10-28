@@ -8,7 +8,9 @@ Gatsby Source Builder.io
       options: {
         apiKey: "enter-your-builder.io-api-key-in-here",
         models:["page"],
-        limit: 100
+        limit: 100,
+        includeRefs: true,
+        sort: ''
       }
     }
 ```

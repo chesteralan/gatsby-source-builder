@@ -38,8 +38,18 @@ const sourceNodes = async ({ actions, createContentDigest, createNodeId }, plugi
             return results;
     }
 
+    const createModelName = (str) => {
+        return str.replace("-"," ").replace(
+          /\w\S*/g,
+          function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+          }
+        ).replace(" ","");
+      }
+
     await Promise.all(models.map(async (model) => {
         const results = await fetchModel(model, apiKey, limit);
+        const typeName = createModelName(model);
         results.map(async (item) => {
             await actions.createNode({
                 // add all fields from pageData
@@ -49,7 +59,7 @@ const sourceNodes = async ({ actions, createContentDigest, createNodeId }, plugi
                 parent: null,
                 children: [],
                 internal: {
-                    type: 'ProductPageData',
+                    type: `${typeName}Data`,
                     contentDigest: createContentDigest(item)
                 }
             })
