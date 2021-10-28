@@ -5,7 +5,7 @@ const pluginOptionsSchema = ({ Joi }) => {
         apiKey: Joi.string().required().description(`Builder.io Api Key`),
         models: Joi.array().required(),
         limit: Joi.number().required().integer().max(200).positive(),
-        sort: Joi.sting(),
+        sort: Joi.string(),
         includeRefs: Joi.boolean(),
     })
 }

@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Gatsby Source Builder.io",
   "main": "index.js",
   "repository": {
