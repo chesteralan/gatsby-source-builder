@@ -18,7 +18,7 @@ gatsbyNode.sourceNodes({
         return id;
     },
 }, {
-    apiKey: "08d8ed1927034a9791a787768e108aa6", 
-    models: ['product-page'], 
+    apiKey: "enter-api-key-in-here", 
+    models: ['page'], 
     limit: 2
 });
