@@ -18,7 +18,7 @@ jobs:
       - run: npm ci
       - run: npm test
         env:
-          BUILDER_API_KEY: ${{secrets.BUILDER_API_KEY}}
+          BUILDER_API_KEY: ${{env.BUILDER_API_KEY}}
 
   publish-npm:
     needs: build
