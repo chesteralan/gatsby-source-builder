@@ -1,6 +1,7 @@
 // noop
 
 const gatsbyNode = require('./gatsby-node');
+require("dotenv").config();
 
 gatsbyNode.sourceNodes({
     actions: {
