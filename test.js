@@ -18,8 +18,8 @@ gatsbyNode.sourceNodes({
         return id;
     },
 }, {
-    apiKey: "enter-api-key-in-here", 
-    models: ['product-page','search-data'], 
+    apiKey: process.env.BUILDER_API_KEY, 
+    models: ['page','funnel-section', 'multipage-funnel'], 
     limit: 100,
     includeRefs: true,
     sort: ''
